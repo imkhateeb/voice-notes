@@ -1,3 +1,3 @@
 const notesController = {};
 
-export default notesController;
+module.exports = notesController;

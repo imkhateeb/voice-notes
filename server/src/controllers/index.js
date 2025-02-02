@@ -1,4 +1,4 @@
-import notesController from "./notes.controller";
-import userController from "./user.controller";
+const notesController = require("./notes.controller");
+const userController = require("./user.controller");
 
 export { notesController, userController };

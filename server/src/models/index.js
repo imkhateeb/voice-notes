@@ -1,9 +1,4 @@
-import notesModel from "./notes.model";
-import userModel from "./user.model";
+const User = require("./user.model");
+const Notes = require("./notes.model");
 
-const models = {
-  Notes: notesModel,
-  User: userModel,
-};
-
-export default models;
+module.exports = { Notes, User };

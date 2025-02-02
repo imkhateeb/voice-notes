@@ -1,4 +1,4 @@
-import errorHandler from "./errorHandler";
-import verifyToken from "./verifyToken";
+const errorHandler = require("./errorHandler");
+const verifyToken = require("./verifyToken");
 
 export { errorHandler, verifyToken };

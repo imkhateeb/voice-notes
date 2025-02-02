@@ -1,4 +1,4 @@
-import express from "express";
+const express = require("express");
 const notesRouter = express.Router();
 
-export default notesRouter;
+module.exports = notesRouter;

@@ -1,3 +1,3 @@
 const notesService = {};
 
-export default notesService;
+module.exports = notesService;

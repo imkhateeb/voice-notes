@@ -1,13 +1,13 @@
-import express from "express";
+const express = require("express");
 
 const app = express();
-import cors from "cors";
-import bodyParser from "body-parser";
-import { PORT } from "./config/server.config.js";
-import apiRouter from "./routes/index.js";
-import rateLimiter from "express-rate-limit";
-import connectToDB from "./config/db.config.js";
-import errorHandler from "./utils/errorHandler.js";
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const { PORT } = require("./config/server.config.js");
+const apiRouter = require("./routes/index");
+const rateLimiter = require("express-rate-limit");
+const connectToDB = require("./config/db.config");
+const errorHandler = require("./utils/errorHandler");
 
 const limiter = rateLimiter({
   windowMs: 15 * 60 * 1000,

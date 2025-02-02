@@ -1,5 +1,11 @@
-import express from "express";
+const express = require("express");
+const userController = require("../controllers/user.controller");
+const authenticate = require("../middlewares/auth.middleware");
 
 const userRouter = express.Router();
 
-export default userRouter;
+userRouter.post("/register", userController.register);
+userRouter.post("/login", userController.login);
+userRouter.get("/:id", authenticate, userController.getUser);
+
+module.exports = userRouter;
